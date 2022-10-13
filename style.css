@@ -1,0 +1,82 @@
+:root {
+    --pink: #ffecec;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* .flex {
+    display: flex;
+} */
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+    font-size: clamp(16px, 10vw, 28px);
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1 {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: clamp(36px, 7vw, 75px);
+    text-transform: uppercase;
+    margin-top: 10%;
+    padding: 5%;
+}
+h2 {
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    font-size: clamp(28px, 7vw, 40px);
+    text-transform: uppercase;
+    padding: 5%;
+}
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+} 
+.list {
+    /* list-style: square; */
+    list-style: none;
+}
+#msg {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.light-theme {
+    --bg: var(--pink);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--pink);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.btn {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    font-family: helvetica;
+    font-size: clamp(14px, 10vw, 18px);
+}
